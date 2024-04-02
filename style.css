@@ -46,3 +46,23 @@
     margin-left:52%;
     margin-top:-150px;
 }
+
+            /*JQuery Add and Remove Class*/
+            .blue{
+                color:blue;
+            }
+            .important{
+                font-size:32px;
+                font-weight: bold;
+            }
+
+                    /*Dimensions*/
+                    #dimension{
+                        background-color: aqua;
+                        border: 5px solid blue;
+                        height: 200px;
+                        width: 300px;
+                        margin: 20px;
+                        padding: 30px;
+
+                    }
