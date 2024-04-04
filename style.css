@@ -66,3 +66,28 @@
                         padding: 30px;
 
                     }
+
+                    /*JQuery siblings*/
+                    .siblings *{
+                        border: 2px solid gray;
+                        display: block;
+                        padding: 5px;
+                        margin: 15px;
+                        width: 300px;
+                        text-align: center;
+                    }
+
+                                /*Filter Table*/
+                                #tableSearch{
+                                    padding:20px;
+                                    border-collapse: collapse;
+                                    text-align: left;
+                                }
+
+                                td , th{
+                                    border: 1px solid gray;
+                                    padding: 10px;
+                                }
+                                tr:nth-child(even){
+                                    background-color: #dddddd;
+                                }

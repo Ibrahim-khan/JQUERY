@@ -257,6 +257,35 @@ $(document).ready(function(){
                                     $("#dimension").html(text1);
                                 });
 
+                               
+                         /*siblings*/
+                         $("#h2").nextAll().css({"color" : "red", "border" : "2px solid red"});
+
+                         /*JQuery AJAX*/
+                         $("#loadText").click(function(){
+                            $("#loadText1").load("demo_test.txt #p1");
+                         });
+
+                //Filter Table
+                $("#searchTableInfo").on("keyup", function(){
+                    var valueAll = $(this).val().toLowerCase();
+                    $("#myTable tr").filter(function(){
+                        $(this).toggle($(this).text().toLowerCase().indexOf(valueAll) > -1)
+                    });
+
+                    $("#myList li").filter(function(){
+                        $(this).toggle($(this).text().toLowerCase().indexOf(valueAll) > -1)
+                    });
+
+                    $("#myDivSearch *").filter(function(){
+                        $(this).toggle($(this).text().toLowerCase().indexOf(valueAll) > -1)
+                    });
+                });
+
+                
+
+                
+
                                                                
 
                                         
